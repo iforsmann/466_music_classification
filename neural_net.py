@@ -1,3 +1,4 @@
+from tkinter.tix import Tree
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -18,6 +19,7 @@ def main():
     df.drop("Class", axis=1, inplace=True)
     music_df = (df - df.mean()) / df.std()
     music_df.reset_index(drop=True, inplace=True)
+    t.reset_index(drop=True, inplace=True)
     print(music_df)
     print(t)
 
