@@ -28,7 +28,10 @@ def test_model():
 if __name__ == "__main__":
     X_train, X_test, y_train, y_test = get_dataframes()
 
-    model_filename = 'music_genre_model.sav'
+    model_filename = 'bayesian_model.sav'
 
     create_model()
     test_model()
+
+
+# accuracy = 0.36013542107490476
