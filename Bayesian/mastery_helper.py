@@ -116,7 +116,7 @@ def posteriors(priors, x,  means, std_devs):
                 numerator *= gaussian_prob(value, means.at[species, df_class], std_devs.at[species, df_class])  # TESTING
                 cur_key += f"{df_class}={value},"
             except KeyError as e:
-                # print(f"KeyError: {e}")
+                print(f"KeyError: {e}")
                 pass
         cur_key = cur_key[:-1]  # remove the last comma
 
